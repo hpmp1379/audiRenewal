@@ -1,0 +1,483 @@
+div.hdrWrap {
+  background-color: #111;
+  width: 100%;
+  position: fixed;
+  z-index: 111;
+}
+div.hdrWrap header {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+div.hdrWrap header label i {
+  font-size: 30px;
+  line-height: 40px;
+}
+div.hdrWrap header label input {
+  vertical-align: middle;
+}
+div.hdrWrap header label:hover {
+  cursor: pointer;
+}
+div.hdrWrap header h1 {
+  max-width: 160px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+div.hdrWrap header h1 img {
+  height: 40px;
+}
+
+input#openNav ~ div.hdrWrap header label i.xi-bars {
+  display: inline;
+}
+input#openNav ~ div.hdrWrap header label i.xi-close-thin {
+  display: none;
+}
+
+input#openNav:checked ~ div.hdrWrap header label i.xi-bars {
+  display: none;
+}
+input#openNav:checked ~ div.hdrWrap header label i.xi-close-thin {
+  display: inline;
+}
+
+input#openNav ~ div.navWrap {
+  width: 0;
+  transition: width 0.5s;
+}
+input#openNav ~ div.navWrap .navMenu2 {
+  overflow: hidden;
+}
+
+input#openNav:checked ~ div.navWrap {
+  width: 100%;
+}
+input#openNav:checked ~ div.navWrap .navMenu2 {
+  overflow: visible;
+}
+
+div.navWrap {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(33, 33, 33, 0.8) 100%);
+  position: fixed;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 110;
+}
+div.navWrap nav {
+  display: flex;
+  justify-content: center;
+}
+div.navWrap nav .navMenu {
+  width: calc(100% * 5 / 12 - 20px);
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  overflow: hidden;
+}
+div.navWrap nav .navMenu dl {
+  width: 100%;
+  padding: 80px 0;
+}
+div.navWrap nav .navMenu dl dt {
+  font-size: 20px;
+  font-weight: 300;
+  width: 200px;
+  margin: 0 auto;
+  text-shadow: 0px 0px 5px #fff;
+  overflow: visible;
+}
+div.navWrap nav .navMenu dl dd {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300;
+  width: 200px;
+  margin-top: 40px;
+  overflow: visible;
+  text-shadow: 0 0px 1px #fff;
+}
+div.navWrap nav .navMenu dl dd:hover {
+  width: 190px;
+  text-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+  text-shadow: 0px 5px 20px #ff9696;
+}
+div.navWrap nav .navMenu dl dd label {
+  cursor: pointer;
+}
+div.navWrap nav .navMenu2 {
+  width: calc(100% * 7 / 12 - 20px);
+  overflow: hidden;
+}
+div.navWrap nav .navMenu2 .image {
+  width: calc(100% + (100vw - 1080px) / 2 + 10px);
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+}
+div.navWrap input#nav1:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav1.jpg);
+}
+div.navWrap input#nav2:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav2.jpg);
+}
+div.navWrap input#nav3:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav3.jpg);
+}
+div.navWrap input#nav4:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav4.jpg);
+}
+
+div.mainWrap {
+  background-image: url(../img/sub2/main.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  opacity: 90%;
+}
+div.mainWrap main h2 {
+  padding: 80px 0;
+  color: #eee;
+  text-shadow: 0 1px 5px black;
+}
+
+div.myaudi {
+  padding-top: 0;
+}
+div.myaudi .header {
+  background-color: #333;
+}
+div.myaudi .header .title {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.myaudi .header .title h3 {
+  line-height: 40px;
+  font-size: 36px;
+  color: #eee;
+}
+div.myaudi section {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+div.myaudi section article {
+  width: calc(100% / 12 * 5);
+}
+div.myaudi section article h4 {
+  color: #36a;
+}
+div.myaudi section article ul {
+  text-align: left;
+}
+div.myaudi section article ul li {
+  line-height: 20px;
+  margin-top: 20px;
+}
+div.myaudi section .loginbox {
+  width: calc(50% - 20px);
+}
+div.myaudi section .loginbox hr {
+  width: 500px;
+}
+div.myaudi section .loginbox form {
+  position: relative;
+  margin: 20px 0;
+}
+div.myaudi section .loginbox form input {
+  width: 360px;
+}
+div.myaudi section .loginbox form input[type=text] {
+  height: 40px;
+}
+div.myaudi section .loginbox form input[type=password] {
+  height: 40px;
+  margin-top: 20px;
+}
+div.myaudi section .loginbox form input[type=submit] {
+  background-color: #333;
+  color: #eee;
+  width: 120px;
+  line-height: 100px;
+  border: 0;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+}
+div.myaudi section .loginbox ul {
+  display: flex;
+}
+div.myaudi section .loginbox ul li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-right: 20px;
+}
+div.myaudi section .loginbox nav {
+  display: flex;
+}
+div.myaudi section .loginbox nav a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin-right: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.myaudi section .loginbox nav a:nth-of-type(1) {
+  background-image: url(../img/sub2/login1.png);
+}
+div.myaudi section .loginbox nav a:nth-of-type(2) {
+  background-image: url(../img/sub2/login2.png);
+}
+div.myaudi section .loginbox nav a:nth-of-type(3) {
+  background-image: url(../img/sub2/login3.png);
+}
+
+div.audilink {
+  padding-top: 0;
+}
+div.audilink .header {
+  background-color: #333;
+}
+div.audilink .header .title {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.audilink .header .title h3 {
+  line-height: 40px;
+  font-size: 36px;
+  color: #eee;
+}
+div.audilink section {
+  margin-top: 0;
+}
+div.audilink section article {
+  display: flex;
+}
+div.audilink section article .texts {
+  margin-top: 80px;
+  width: 66.66%;
+}
+div.audilink section article .texts p {
+  width: 430px;
+  height: 80px;
+  margin-top: 40px;
+}
+div.audilink section article .image3 {
+  width: 33.33%;
+}
+div.audilink section article .image3 .image2 {
+  width: calc(120% + (100vw - 1080px) / 2);
+  min-width: 450px;
+  height: 360px;
+  background-color: #f60;
+  position: relative;
+  overflow: hidden;
+  transform: skew(15deg);
+}
+div.audilink section article .image3 .image2 .image1 {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  transform: skew(-15deg);
+  position: absolute;
+  left: -50px;
+}
+div.audilink section article .image3 .image2 .i1 {
+  background-image: url(../img/sub2/img1.jpg);
+}
+div.audilink section article .image3 .image2 .i2 {
+  background-image: url(../img/sub2/img2.jpg);
+}
+div.audilink section article .image3 .image2 .i3 {
+  background-image: url(../img/sub2/img3.jpg);
+}
+div.audilink section article:nth-of-type(2) {
+  margin-top: 80px;
+  direction: rtl;
+}
+div.audilink section article:nth-of-type(2) .texts {
+  text-align: right;
+  direction: rtl;
+}
+div.audilink section article:nth-of-type(2) .image3 {
+  direction: rtl;
+}
+div.audilink section article:nth-of-type(2) .image3 .image2 {
+  direction: rtl;
+  transform: skew(-15deg);
+}
+div.audilink section article:nth-of-type(2) .image3 .image2 .image1 {
+  transform: skew(15deg);
+  left: 50px;
+}
+div.audilink section article:nth-of-type(3) {
+  margin-top: 80px;
+}
+
+div.audinews {
+  padding-top: 0;
+}
+div.audinews .header {
+  background-color: #333;
+}
+div.audinews .header .title {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.audinews .header .title h3 {
+  line-height: 40px;
+  font-size: 36px;
+  color: #eee;
+}
+div.audinews section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.audinews section article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+div.audinews section article:first-child {
+  flex-direction: column;
+}
+div.audinews section article:first-child .image {
+  width: 100%;
+  height: 360px;
+}
+div.audinews section article:first-child .texts {
+  width: 100%;
+}
+div.audinews section article:first-child .texts h5 {
+  width: 100%;
+  font-size: 24px;
+}
+div.audinews section article:first-child .texts h4 {
+  width: 100%;
+  font-size: 36px;
+  line-height: 40px;
+}
+div.audinews section article:first-child .texts p {
+  display: block;
+  width: calc(100% / 6 * 5);
+  line-height: 20px;
+}
+div.audinews section article:first-child .texts .btn a {
+  margin-left: auto;
+}
+div.audinews section article:nth-of-type(2), div.audinews section article:nth-of-type(3) {
+  margin-top: 40px;
+}
+div.audinews section article .image {
+  width: calc(50% - 10px);
+  background-color: #444;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+}
+div.audinews section article .i1 {
+  background-image: url(../img/sub2/img4.jpg);
+}
+div.audinews section article .i2 {
+  background-image: url(../img/sub2/img5.jpg);
+}
+div.audinews section article .i3 {
+  background-image: url(../img/sub2/img6.jpg);
+}
+div.audinews section article .texts {
+  width: calc(50% - 10px);
+}
+div.audinews section article .texts h5 {
+  font-size: 16px;
+}
+div.audinews section article .texts h4 {
+  font-size: 18px;
+}
+div.audinews section article .texts h3 {
+  margin-top: 40px;
+  font-size: 24px;
+  height: 120px;
+}
+div.audinews section article .texts p {
+  display: none;
+}
+div.audinews section article .texts nav {
+  display: none;
+}
+div.audinews section article .btn {
+  text-align: center;
+}
+div.audinews section article .btn:hover {
+  cursor: pointer;
+}
+div.audinews section article .btn a {
+  display: block;
+  width: 160px;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+div.audinews section .btn3 {
+  margin-top: 80px;
+  text-align: center;
+}
+div.audinews section .btn3:hover {
+  font-size: 18px;
+}
+div.audinews section .btn3 a {
+  display: block;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.ftrWrap {
+  background-color: #111;
+}
+.ftrWrap footer h1 {
+  text-align: center;
+}
+.ftrWrap footer h1 a img {
+  height: 40px;
+}
+.ftrWrap footer ul {
+  overflow: hidden;
+}
+.ftrWrap footer ul li {
+  float: left;
+  margin-right: 20px;
+}
+.ftrWrap footer hr:nth-of-type(2) {
+  margin-top: 40px;
+}
+.ftrWrap footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+.ftrWrap footer nav .navi {
+  display: flex;
+}
+.ftrWrap footer nav .navi a {
+  display: block;
+  font-size: 30px;
+  margin-left: 20px;
+}/*# sourceMappingURL=sub2.css.map */

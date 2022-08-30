@@ -1,0 +1,409 @@
+//sub2.scss
+
+div.hdrWrap{
+    background-color: #111;
+    width: 100%;
+    position: fixed;
+    z-index: 111;
+    header{
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        label{
+            i{font-size: 30px; line-height: 40px;}
+            input{vertical-align: middle;}
+            &:hover{cursor: pointer;}
+        }
+        text-align: center;
+        h1{
+            max-width: 160px;
+            position: absolute;
+            margin: auto;
+            left: 0; right: 0;
+            img{
+                height: 40px;
+            }
+        }
+    }
+}
+//hamburger icon interaction
+input#openNav~div.hdrWrap{
+    header{
+        label{
+            i.xi-bars{display:inline;}
+            i.xi-close-thin{display:none;}
+        }
+    }
+}
+input#openNav:checked~div.hdrWrap{
+    header{
+        label{
+            i.xi-bars{display:none;}
+            i.xi-close-thin{display:inline;}
+        }
+    }
+}
+
+//hamburger icon + navWrap interaction
+input#openNav~div.navWrap{
+    width: 0;transition: width 0.5s;
+    .navMenu2{
+        overflow: hidden;
+    }
+}
+input#openNav:checked~div.navWrap{
+    width: 100%;
+    .navMenu2{
+        overflow: visible;
+    }
+}
+
+//navWrap
+div.navWrap{
+    background:linear-gradient(to right, rgba(0,0,0,0.999), rgba(33,33,33,0.8) 100%);
+    position: fixed;
+    width: 100%;
+    margin-top: 40px;
+    z-index: 110;
+    nav{
+        display: flex;
+        justify-content: center;
+        .navMenu{
+            width: calc(100% * 5 / 12 - 20px);
+            display: flex;
+            justify-content: center;
+            text-align: right;
+            overflow: hidden;
+            dl{
+                width: 100%;
+                padding: 80px 0;
+                dt{
+                    font-size: 20px; font-weight: 300;
+                    width: 200px;
+                    margin: 0 auto;
+                    text-shadow: 0px 0px 5px #fff;
+                    overflow: visible;
+                }
+                dd{
+                    margin: 0 auto;
+                    font-size: 18px; font-weight: 300;
+                    width: 200px;
+                    margin-top: 40px;
+                    overflow: visible;
+                    text-shadow: 0 0px 1px #fff;
+                    &:hover{
+                        width: 190px;
+                        text-shadow: 0px 5px 20px rgba(255,255,255,0.1);
+                        text-shadow: 0px 5px 20px rgb(255, 150, 150);
+                    }
+                    label{cursor: pointer;}
+                }
+            }
+        }
+        .navMenu2{
+            width: calc(100% * 7 / 12 - 20px);
+            overflow: hidden;
+            .image{
+                width: calc(100% + (100vw - 1080px) / 2 + 10px);
+                height: 520px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    input#nav1:hover~div.navMenu2{
+        .i1{background-image: url(../img/index/nav1.jpg);}}
+    input#nav2:hover~div.navMenu2{
+        .i1{background-image: url(../img/index/nav2.jpg);}}
+    input#nav3:hover~div.navMenu2{
+        .i1{background-image: url(../img/index/nav3.jpg);}}
+    input#nav4:hover~div.navMenu2{
+        .i1{background-image: url(../img/index/nav4.jpg);}}
+}
+
+//universal mainwrap
+div.mainWrap{
+    background-image: url(../img/sub2/main.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    opacity: 90%;
+    main{
+        h2{
+            padding: 80px 0; color: #eee;
+            text-shadow: 0 1px 5px rgba(0,0,0,1);
+        }
+    }
+}
+
+//Finish
+div.myaudi{
+    padding-top: 0;
+    .header{
+        background-color: #333;
+        .title{
+            width: 90%; max-width: 1080px;
+            margin: 0 auto;
+            h3{line-height: 40px; font-size: 36px;color: #eee;}
+        }
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+        article{
+            width: calc(100% / 12 * 5);
+            h4{color: #36a}
+            ul{
+                text-align: left;
+                li{
+                    line-height: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .loginbox{
+            width: calc(50% - 20px);
+            h4{}
+            hr{width: 500px;}
+            form{
+                position: relative;
+                margin: 20px 0;
+                input{
+                    width: 360px;
+                }
+                input[type=text]{
+                    height: 40px;
+                }
+                input[type=password]{
+                    height: 40px;
+                    margin-top: 20px;
+                }
+                input[type=submit]{
+                    background-color: #333; color: #eee;
+                    width: 120px; line-height: 100px;
+                    border: 0; border-radius: 10px;
+                    position: absolute;
+                    bottom: 0; top: 0;
+                    right: 20px;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                display: flex;
+                li{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    margin-right: 20px;
+                }
+            }
+            h5{}
+            nav{
+                display: flex;
+                a{
+                    display: block;
+                    width: 100px;
+                    height: 40px;
+                    margin-right: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &:nth-of-type(1){background-image: url(../img/sub2/login1.png);}
+                    &:nth-of-type(2){background-image: url(../img/sub2/login2.png);}
+                    &:nth-of-type(3){background-image: url(../img/sub2/login3.png);}
+                }
+            }
+            
+        }
+    }
+}
+
+//Finish
+div.audilink{
+    padding-top: 0;
+    .header{
+        background-color: #333;
+        .title{
+            width: 90%; max-width: 1080px;
+            margin: 0 auto;
+            h3{line-height: 40px; font-size: 36px;color: #eee;}
+        }
+    }
+    section{
+        margin-top: 0;
+        article{
+            display: flex;
+            .texts{
+                margin-top: 80px;
+                width: 66.66%;
+                p{
+                    width: 430px;
+                    height: 80px;
+                    margin-top: 40px;
+                }
+            }
+            .image3{
+                width: 33.33%;
+                .image2{
+                    width: calc(120% + (100vw - 1080px) / 2);
+                    min-width: 450px; height: 360px;
+                    background-color: #f60;
+                    position:relative;
+                    overflow: hidden;
+                    transform: skew(15deg);
+                    .image1{
+                        width: 100%;
+                        height: 360px;
+                        background-size: cover;
+                        background-position: center;
+                        transform: skew(-15deg);
+                        position: absolute;
+                        left: -50px;
+                    }
+                    .i1{background-image: url(../img/sub2/img1.jpg);}
+                    .i2{background-image: url(../img/sub2/img2.jpg);}
+                    .i3{background-image: url(../img/sub2/img3.jpg);}
+                }
+            }
+            &:nth-of-type(2){
+                margin-top: 80px;
+                direction: rtl;
+                .texts{
+                    text-align: right;
+                    direction: rtl;
+                }
+                .image3{
+                    direction: rtl;
+                    .image2{
+                        direction: rtl;
+                        transform: skew(-15deg);
+                        .image1{
+                            transform: skew(15deg);
+                            left: 50px;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+div.audinews{
+    padding-top: 0;
+    .header{
+        background-color: #333;
+        .title{
+            width: 90%; max-width: 1080px;
+            margin: 0 auto;
+            h3{line-height: 40px; font-size: 36px;color: #eee;}
+        }
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        article{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            &:first-child{
+                flex-direction: column;
+                .image{
+                    width: 100%; height: 360px;
+                }
+                .texts{
+                    width: 100%;
+                    h5{width: 100%;font-size: 24px;}
+                    h4{width: 100%;font-size: 36px; line-height: 40px;}
+                    p{
+                        display: block;
+                        width: calc(100% / 6 * 5); line-height: 20px;
+                    }
+                    .btn{
+                        a{
+                            margin-left: auto;}
+                    }
+                }
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(3){margin-top: 40px;}
+            .image{
+                width: calc(50% - 10px);
+                background-color: #444;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+            }
+            .i1{background-image: url(../img/sub2/img4.jpg);}
+            .i2{background-image: url(../img/sub2/img5.jpg);}
+            .i3{background-image: url(../img/sub2/img6.jpg);}
+            .texts{
+                width: calc(50% - 10px);
+                h5{font-size: 16px;}
+                h4{font-size: 18px;}
+                h3{margin-top: 40px;font-size: 24px; height: 120px;}
+                p{display: none;}
+                nav{display: none;}
+            }
+            .btn{
+                text-align: center;
+                &:hover{cursor:pointer;}
+                a{
+                    display: block;
+                    width: 160px;
+                    color: #333;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid #333;
+                }
+            }
+        }
+        .btn3{
+            margin-top: 80px;
+            text-align: center;
+            &:hover{font-size: 18px;}
+            a{
+                display: block;
+                width: 160px;
+                background-color: #333;
+                color: #fff;
+                line-height: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+//ftrWrap
+.ftrWrap{
+    background-color: #111;
+    footer{
+        h1{text-align: center;
+            a{img{height: 40px;}}
+        }
+        ul{
+            overflow: hidden;
+            li{float: left; margin-right: 20px;}
+        }
+        hr{&:nth-of-type(2){margin-top: 40px;}}
+        nav{
+            display: flex;
+            justify-content: space-between;
+            dl{}
+            .navi{
+                display: flex;
+                a{
+                    display: block; font-size: 30px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

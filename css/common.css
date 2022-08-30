@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+/* 인터넷이 오프라인 *.otf, *.ttf, *.eot*/
+@import url(../css/all.css);
+@import url(../css/xeicon.css);
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    src: url(../fonts/NotoSansKR-Light.otf);
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    src: url(../fonts/NotoSansKR-Regular.otf);
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+body{
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, dt{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, p, li, dt, dd{
+    overflow: hidden;
+}
+
+
+
+div.menuWrap{}
+div.menuWrap menu{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+div.menuWrap menu li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+div.hdrWrap{}
+div.hdrWrap header{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: #eee;
+}
+div.hdrWrap header h1{
+    font-size: 25px;
+    line-height: 40px;
+}
+div.hdrWrap header h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+}
+div.hdrWrap header li{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+div.mainWrap{}
+div.mainWrap main{
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 80px 10px;
+}
+div.mainWrap main h2{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+div.navWrap{}
+div.navWrap nav{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #eee;
+}
+div.navWrap nav dl label i{font-size: 20px; vertical-align: middle;}
+div.navWrap nav dl dt{
+    font-weight: 700; line-height: 40px;
+}
+div.navWrap nav dl dd{
+    line-height: 40px;
+}
+
+
+div.content{
+    padding: 80px 0;
+}
+div.content header{
+    text-align: center;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.content header h2{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+}
+div.content header h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #000;
+}
+div.content header p{}
+div.content section{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+div.content section h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+}
+div.content section h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+}
+div.content section h5{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #333;
+}
+div.content section p{}
+div.content section nav{
+    font-size: 32px;
+    line-height: 40px;
+    color: #000;
+}
+
+
+div.banner{
+    padding: 80px 0;
+}
+div.banner section{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+div.ftrWrap{
+    padding: 80px 0;
+}
+div.ftrWrap footer{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #eee;
+}
+div.ftrWrap footer h1{}
+div.ftrWrap footer dl{
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+}
+div.ftrWrap footer li{
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+}
+div.ftrWrap footer .navi{
+    margin-top: 40px;
+}

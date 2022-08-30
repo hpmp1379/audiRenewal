@@ -1,0 +1,370 @@
+div.hdrWrap {
+  background-color: #111;
+  width: 100%;
+  position: fixed;
+  z-index: 111;
+}
+div.hdrWrap header {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+div.hdrWrap header label i {
+  font-size: 30px;
+  line-height: 40px;
+}
+div.hdrWrap header label input {
+  vertical-align: middle;
+}
+div.hdrWrap header label:hover {
+  cursor: pointer;
+}
+div.hdrWrap header h1 {
+  max-width: 160px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+div.hdrWrap header h1 img {
+  height: 40px;
+}
+
+input#openNav ~ div.hdrWrap header label i.xi-bars {
+  display: inline;
+}
+input#openNav ~ div.hdrWrap header label i.xi-close-thin {
+  display: none;
+}
+
+input#openNav:checked ~ div.hdrWrap header label i.xi-bars {
+  display: none;
+}
+input#openNav:checked ~ div.hdrWrap header label i.xi-close-thin {
+  display: inline;
+}
+
+input#openNav ~ div.navWrap {
+  width: 0;
+  transition: width 0.5s;
+}
+input#openNav ~ div.navWrap .navMenu2 {
+  overflow: hidden;
+}
+
+input#openNav:checked ~ div.navWrap {
+  width: 100%;
+}
+input#openNav:checked ~ div.navWrap .navMenu2 {
+  overflow: visible;
+}
+
+div.navWrap {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(33, 33, 33, 0.8) 100%);
+  position: fixed;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 110;
+}
+div.navWrap nav {
+  display: flex;
+  justify-content: center;
+}
+div.navWrap nav .navMenu {
+  width: calc(100% * 5 / 12 - 20px);
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  overflow: hidden;
+}
+div.navWrap nav .navMenu dl {
+  width: 100%;
+  padding: 80px 0;
+}
+div.navWrap nav .navMenu dl dt {
+  font-size: 20px;
+  font-weight: 300;
+  width: 200px;
+  margin: 0 auto;
+  text-shadow: 0px 0px 5px #fff;
+  overflow: visible;
+}
+div.navWrap nav .navMenu dl dd {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300;
+  width: 200px;
+  margin-top: 40px;
+  overflow: visible;
+  text-shadow: 0 0px 1px #fff;
+}
+div.navWrap nav .navMenu dl dd:hover {
+  width: 190px;
+  text-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+  text-shadow: 0px 5px 20px #ff9696;
+}
+div.navWrap nav .navMenu dl dd label {
+  cursor: pointer;
+}
+div.navWrap nav .navMenu2 {
+  width: calc(100% * 7 / 12 - 20px);
+  overflow: hidden;
+}
+div.navWrap nav .navMenu2 .image {
+  width: calc(100% + (100vw - 1080px) / 2 + 10px);
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+}
+div.navWrap input#nav1:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav1.jpg);
+}
+div.navWrap input#nav2:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav2.jpg);
+}
+div.navWrap input#nav3:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav3.jpg);
+}
+div.navWrap input#nav4:hover ~ div.navMenu2 .i1 {
+  background-image: url(../img/index/nav4.jpg);
+}
+
+div.mainWrap {
+  background-image: url(../img/sub1/main.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+}
+div.mainWrap main h2 {
+  padding: 80px 0;
+  color: #eee;
+  text-shadow: 0 1px 5px black;
+}
+
+div.sub1 {
+  padding: 0;
+}
+div.sub1 .header {
+  background-color: #333;
+  margin-top: 80px;
+}
+div.sub1 .header .title {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.sub1 .header .title h3 {
+  line-height: 40px;
+  font-size: 36px;
+  color: #eee;
+}
+div.sub1 .bgText {
+  position: relative;
+}
+div.sub1 .bgText p {
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 160px;
+  text-align: left;
+  opacity: 4%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  color: #000;
+}
+div.sub1 section {
+  margin: 0 auto;
+}
+div.sub1 section article .atop {
+  display: flex;
+  justify-content: space-between;
+}
+div.sub1 section article .atop .texts {
+  padding-top: 80px;
+  width: 520px;
+}
+div.sub1 section article .atop .texts p {
+  margin-top: 40px;
+  height: 80px;
+}
+div.sub1 section article .atop .image3 {
+  width: 50%;
+}
+div.sub1 section article .atop .image3 .image2 {
+  width: calc(120% + (100vw - 1080px) / 2);
+  min-width: 180%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+div.sub1 section article .atop .image3 .image2 .image1 {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+div.sub1 section article .abot {
+  display: flex;
+  justify-content: space-between;
+}
+div.sub1 section article .abot .btn a {
+  display: block;
+  margin-top: 160px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  width: 200px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #555;
+  color: #eee;
+}
+div.sub1 section article .abot .image3 {
+  margin-top: 40px;
+  width: calc(100% / 3);
+}
+div.sub1 section article .abot .image3 .image2 {
+  width: calc(120% + (100vw - 1080px) / 2);
+  min-width: 180%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+div.sub1 section article .abot .image3 .image2 .image1 {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+div.sub1 section article:nth-of-type(1) .atop .image3 .image2 {
+  transform: skew(15deg);
+  left: -35px;
+}
+div.sub1 section article:nth-of-type(1) .atop .image3 .image2 .image1 {
+  transform: skew(-15deg);
+  left: -40px;
+}
+div.sub1 section article:nth-of-type(1) .abot .image3 .image2 {
+  transform: skew(15deg);
+  left: -35px;
+}
+div.sub1 section article:nth-of-type(1) .abot .image3 .image2 .image1 {
+  transform: skew(-15deg);
+  left: -40px;
+}
+div.sub1 section article:nth-of-type(2) {
+  margin-top: 80px;
+}
+div.sub1 section article:nth-of-type(2) .atop {
+  direction: rtl;
+}
+div.sub1 section article:nth-of-type(2) .atop .texts {
+  text-align: right;
+}
+div.sub1 section article:nth-of-type(2) .atop .image3 {
+  direction: rtl;
+}
+div.sub1 section article:nth-of-type(2) .atop .image3 .image2 {
+  transform: skew(-15deg);
+  left: 35px;
+}
+div.sub1 section article:nth-of-type(2) .atop .image3 .image2 .image1 {
+  transform: skew(15deg);
+  left: 35px;
+}
+div.sub1 section article:nth-of-type(2) .abot {
+  direction: rtl;
+}
+div.sub1 section article:nth-of-type(2) .abot .image3 {
+  direction: rtl;
+}
+div.sub1 section article:nth-of-type(2) .abot .image3 .image2 {
+  transform: skew(-15deg);
+  left: 35px;
+}
+div.sub1 section article:nth-of-type(2) .abot .image3 .image2 .image1 {
+  transform: skew(15deg);
+  left: 35px;
+}
+
+div.cnt04 .header {
+  margin-top: 0;
+}
+div.cnt04 :nth-of-type(1) .atop .image1 {
+  background-image: url(../img/sub1/img1.jpg);
+}
+div.cnt04 :nth-of-type(1) .abot .image1 {
+  background-image: url(../img/sub1/img2.jpg);
+}
+div.cnt04 :nth-of-type(2) .atop .image1 {
+  background-image: url(../img/sub1/img3.jpg);
+}
+div.cnt04 :nth-of-type(2) .abot .image1 {
+  background-image: url(../img/sub1/img4.jpg);
+}
+
+div.cnt05 :nth-of-type(1) .atop .image1 {
+  background-image: url(../img/sub1/img5.jpg);
+}
+div.cnt05 :nth-of-type(1) .abot .image1 {
+  background-image: url(../img/sub1/img6.jpg);
+}
+div.cnt05 :nth-of-type(2) .atop .image1 {
+  background-image: url(../img/sub1/img7.jpg);
+}
+div.cnt05 :nth-of-type(2) .abot .image1 {
+  background-image: url(../img/sub1/img8.jpg);
+}
+
+div.cnt06 :nth-of-type(1) .atop .image1 {
+  background-image: url(../img/sub1/img9.jpg);
+}
+div.cnt06 :nth-of-type(1) .abot .image1 {
+  background-image: url(../img/sub1/img10.jpg);
+}
+div.cnt06 :nth-of-type(2) .atop .image1 {
+  background-image: url(../img/sub1/img11.jpg);
+}
+div.cnt06 :nth-of-type(2) .abot .image1 {
+  background-image: url(../img/sub1/img12.jpg);
+}
+
+div.cnt2 {
+  margin-top: 80px;
+}
+
+.ftrWrap {
+  background-color: #111;
+  margin-top: 80px;
+}
+.ftrWrap footer h1 {
+  text-align: center;
+}
+.ftrWrap footer h1 a img {
+  height: 40px;
+}
+.ftrWrap footer ul {
+  overflow: hidden;
+}
+.ftrWrap footer ul li {
+  float: left;
+  margin-right: 20px;
+}
+.ftrWrap footer hr:nth-of-type(2) {
+  margin-top: 40px;
+}
+.ftrWrap footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+.ftrWrap footer nav .navi {
+  display: flex;
+}
+.ftrWrap footer nav .navi a {
+  display: block;
+  font-size: 30px;
+  margin-left: 20px;
+}/*# sourceMappingURL=sub1.css.map */
